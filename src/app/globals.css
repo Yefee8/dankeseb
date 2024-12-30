@@ -20,7 +20,7 @@ html{
 }
 
 .page-banner{
-  @apply w-full h-full absolute left-0 top-0 -z-10 bg-cover bg-center brightness-[55%];
+  @apply w-full h-full absolute left-0 top-0 -z-10  object-cover object-center brightness-[55%];
 }
 
 .page-half-banner{

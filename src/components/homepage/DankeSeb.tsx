@@ -1,5 +1,5 @@
 import { SlArrowDownCircle } from "react-icons/sl";
-
+import Image from "next/image";
 export default function DankeSeb() {
   return (
     <div id="danke-seb" className="page flex justify-center items-center">
@@ -11,12 +11,8 @@ export default function DankeSeb() {
           A Timeless Tribute to a Racing Legend.
         </h2>
       </div>
-
-      <div
-        className="page-banner"
-        style={{ backgroundImage: `url("/images/seb-by-yefee.png")` }}
-      ></div>
-
+      <Image className="page-banner" src="/images/seb-by-yefee.png" loading="eager" priority={true} alt="Sebastian Vettel" width={1920} height={1080} />
+      
       <a href="#general-stats" className="absolute bottom-10">
         <SlArrowDownCircle className="text-2xl" />
       </a>
