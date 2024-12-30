@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Sebastian Vettel's F1 Team Tribute, made by Yefee",
     images: [
       {
-        url: "https://danke-sebastian.vercel.app/images/seb-by-yefee.png",
+        url: "https://dankeseb.vercel.app/images/seb-by-yefee.png",
         width: 1280,
         height: 720,
         alt: "SV5 by Yefee",
