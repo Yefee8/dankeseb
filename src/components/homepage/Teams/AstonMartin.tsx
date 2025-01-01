@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function RedbullRacing() {
+export default function AstonMartin() {
   return (
     <div id="aston-martin" className="page max-md:!h-[1200px]  max-md:flex-col flex justify-center">
       <div className="md:w-1/2 md:h-full h-1/2 bg-[#00231f]/20 justify-center items-center flex flex-col gap-4">
@@ -14,8 +14,8 @@ export default function RedbullRacing() {
           moments of misfortune. He secured a podium finish at the 2021
           Azerbaijan Grand Prix, showcasing his skill and determination.
           However, the season was not without its challenges, as he faced
-          various setbacks including a retirement from the 2021 Hungarian Grand
-          Prix. Despite the ups and downs of his first year, Vettel continued to
+          various setbacks including a disqualifaction from the 2021 Hungarian Grand
+          Prix due to a fuel irregularity. Despite the ups and downs of his first year, Vettel continued to
           be a valuable asset to the Aston Martin team, both on and off the
           track. His experience and leadership were instrumental in helping the
           team develop and improve their car.
