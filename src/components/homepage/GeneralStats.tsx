@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function GeneralStats() {
   const stats = [
     "15 Full Seasons",
@@ -13,6 +15,7 @@ export default function GeneralStats() {
 
   const teams = [
     "BMW Sauber",
+    "Toro Rosso",
     "Red Bull Racing",
     "Scuderia Ferrari",
     "Aston Martin",
@@ -22,12 +25,13 @@ export default function GeneralStats() {
       id="general-stats"
       className="page max-md:!h-[145vh] max-md:flex-col flex justify-center"
     >
-      <div
+      <Image
+        width={1000}
+        height={1000}
+        src="/images/2015Maleysia.jpg"
         className="page-half-banner"
-        style={{
-          backgroundImage: `url("/images/2015Maleysia.jpg")`,
-        }}
-      ></div>
+        alt="Sebastian Vettel 2015 Malaysia Grand Prix"
+      />
 
       <div className="md:w-1/2 md:h-full h-1/2 bg-indigo-600/10 justify-center items-center flex flex-col gap-4">
         <h1 className="text-xl md:text-3xl font-bold">299 Races</h1>
@@ -41,7 +45,10 @@ export default function GeneralStats() {
 
           <div className="flex gap-2 items-center">
             {teams.map((team) => (
-              <a key={team} href={`#${team.replaceAll(" ", "-").toLowerCase()}`}>
+              <a
+                key={team}
+                href={`#${team.replaceAll(" ", "-").toLowerCase()}`}
+              >
                 <div className="text-sm md:text-base font-semibold bg-indigo-600/20 px-2 py-1 rounded">
                   {team}
                 </div>

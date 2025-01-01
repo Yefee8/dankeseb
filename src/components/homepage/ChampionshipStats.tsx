@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function ChampionshipStats() {
   return (
     <div
@@ -25,12 +27,13 @@ export default function ChampionshipStats() {
         </div>
       </div>
 
-      <div
+      <Image
+        width={1000}
+        height={1000}
+        src="/images/four-time-world-champion.avif"
         className="page-half-banner"
-        style={{
-          backgroundImage: `url("/images/four-time-world-champion.avif")`,
-        }}
-      ></div>
+        alt="Sebastian Vettel 4 Time World Champion"
+      />
     </div>
   );
 }
