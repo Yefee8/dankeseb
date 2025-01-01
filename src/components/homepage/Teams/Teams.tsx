@@ -18,7 +18,7 @@ export default function Teams() {
           impactful stint with BMW Sauber proved Vettel's potential to the
           motorsport world and paved the way for a full-time seat at Scuderia
           Toro Rosso later that season.`,
-      image: "/images/BmwSauber.jpg",
+      image: "/images/teams/BmwSauber.jpg",
       color: `bg-slate-600/10`,
     },
     {
@@ -34,7 +34,7 @@ export default function Teams() {
           maiden Formula 1 victory, becoming the youngest race winner in F1
           history at the time. His victory wasn’t just a personal milestone but
           also Toro Rosso's first and only win in Formula 1.`,
-      image: "/images/ToroRosso.webp",
+      image: "/images/teams/ToroRosso.webp",
       color: `bg-indigo-600/10`,
     },
     {
@@ -55,7 +55,7 @@ export default function Teams() {
           Bull Racing cemented his legacy as one of the sport’s greatest
           drivers. With 38 wins, 44 pole positions, and 4 world titles, his Red
           Bull era remains a golden chapter in Formula 1 history.`,
-      image: "/images/RedbullRacing.webp",
+      image: "/images/teams/RedbullRacing.webp",
       color: `bg-[#001c45]/40`,
     },
     {
@@ -79,7 +79,7 @@ export default function Teams() {
           the team to its former glory. He left Ferrari in 2020, having secured
           14 wins with the team, but the dream of a world championship with Ferrari
           remained unfulfilled.`,
-      image: "/images/Ferrari.jpg",
+      image: "/images/teams/Ferrari.jpg",
       color: `bg-red-700/10`,
     },
     {
@@ -97,7 +97,7 @@ export default function Teams() {
           be a valuable asset to the Aston Martin team, both on and off the
           track. His experience and leadership were instrumental in helping the
           team develop and improve their car.`,
-      image: "/images/AstonMartin.jpg",
+      image: "/images/teams/AstonMartin.jpg",
       color: `bg-[#00231f]/20`,
     },
   ];
@@ -119,7 +119,7 @@ export default function Teams() {
             className="page-half-banner"
             alt={`Sebastian Vettel ${team.title}`}
           />
-          <div className="md:w-1/2 md:h-full h-1/2 bg-[#001c45]/40 justify-center items-center flex flex-col gap-4">
+          <div className={`md:w-1/2 md:h-full h-1/2 ${team.color} justify-center items-center flex flex-col gap-4`}>
             <h1 className="text-xl md:text-3xl font-bold">{team.title}</h1>
 
             <p className="text-base md:text-lg font-medium md:px-16 px-8 text-center">
