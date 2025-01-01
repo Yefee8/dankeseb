@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-export default function Ferrari() {
+export default function ScuderiaFerrari() {
   return (
-    <div id="toro-rosso" className="page max-md:flex-col flex justify-center">
+    <div id="scuderia-ferrari" className="page max-md:flex-col flex justify-center">
       <Image
         width={1000}
         height={1000}
@@ -12,7 +12,7 @@ export default function Ferrari() {
       />
 
       <div className="md:w-1/2 md:h-full h-1/2 bg-red-600/5 justify-center items-center flex flex-col gap-4">
-        <h1 className="text-xl md:text-3xl font-bold">Ferrari</h1>
+        <h1 className="text-xl md:text-3xl font-bold">Scuderia Ferrari</h1>
 
         <p className="text-base md:text-lg font-medium md:px-16 px-8 text-center">
           In 2015, Sebastian Vettel made a highly anticipated move to Ferrari,

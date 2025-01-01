@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function RedbullRacing() {
   return (
     <div
-      id="redbull-racing"
+      id="red-bull-racing"
       className="page max-md:flex-col flex justify-center"
     >
       <div className="md:w-1/2 md:h-full h-1/2 bg-[#001c45]/40 justify-center items-center flex flex-col gap-4">
-        <h1 className="text-xl md:text-3xl font-bold">Redbull Racing</h1>
+        <h1 className="text-xl md:text-3xl font-bold">Red Bull Racing</h1>
 
         <p className="text-base md:text-lg font-medium md:px-16 px-8 text-center">
           Sebastian Vettel’s move to Red Bull Racing in 2009 marked the
