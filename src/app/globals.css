@@ -24,7 +24,7 @@ html{
 }
 
 .page-half-banner{
-  @apply md:w-1/2 h-screen max-w-full md:h-full object-cover object-center;
+  @apply md:w-1/2 h-1/2 max-w-full md:h-full object-cover object-center;
 }
 
 .page-content{
