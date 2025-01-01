@@ -17,6 +17,15 @@ export const metadata: Metadata = {
   title: "A Timeless Tribute to a Racing Legend - SV5 by Yefee",
   description: "Sebastian Vettel's F1 Team Tribute, made by Yefee",
   keywords: [
+    "dankeseb vercel",
+    "dankeseb",
+    "dankeseb.vercel.app",
+    "danke sebastian website",
+    "sebastian vettel tribute",
+    "danke seb website",
+    "danke seb web app",
+    "sebastian vettel tribute",
+    "danke vettel",
     "Sebastian Vettel",
     "F1",
     "Formula 1",
@@ -25,6 +34,8 @@ export const metadata: Metadata = {
     "Fan made",
     "Danke Seb",
     "Danke Sebastian",
+    "web app",
+    "website",
     "Yefee",
   ],
   openGraph: {
@@ -52,7 +63,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-
       </body>
 
       <Analytics />
