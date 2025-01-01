@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="fixed top-0 left-0 w-full py-2 flex justify-center md:justify-between gap-4 flex-wrap items-center md:px-16 px-8 z-50 duration-250">
+    <div className="absolute top-0 left-0 w-full py-2 flex justify-center md:justify-between gap-4 flex-wrap items-center md:px-16 px-8 z-50 duration-250">
       <a href="/">
       <h1 className="text-2xl font-bold cursor-pointer">Danke Seb</h1>
       </a>
