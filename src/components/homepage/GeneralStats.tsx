@@ -23,7 +23,7 @@ export default function GeneralStats() {
   return (
     <div
       id="general-stats"
-      className="page max-md:!h-[145vh] max-md:flex-col flex justify-center"
+      className="page max-md:!h-[1200px] max-md:flex-col flex justify-center"
     >
       <Image
         width={1000}
@@ -43,7 +43,7 @@ export default function GeneralStats() {
             </div>
           ))}
 
-          <div className="flex gap-2 items-center">
+          <div className="flex flex-wrap gap-2 justify-center items-center max-md:px-4">
             {teams.map((team) => (
               <a
                 key={team}

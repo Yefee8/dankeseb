@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function RedbullRacing() {
   return (
-    <div id="aston-martin" className="page max-md:flex-col flex justify-center">
+    <div id="aston-martin" className="page max-md:!h-[1200px]  max-md:flex-col flex justify-center">
       <div className="md:w-1/2 md:h-full h-1/2 bg-[#00231f]/20 justify-center items-center flex flex-col gap-4">
         <h1 className="text-xl md:text-3xl font-bold">Aston Martin</h1>
 

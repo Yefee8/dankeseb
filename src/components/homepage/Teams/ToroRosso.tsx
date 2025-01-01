@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ToroRosso() {
   return (
-    <div id="toro-rosso" className="page max-md:flex-col flex justify-center">
+    <div id="toro-rosso" className="page max-md:!h-[1200px] max-md:flex-col flex justify-center">
       <Image
         width={1000}
         height={1000}

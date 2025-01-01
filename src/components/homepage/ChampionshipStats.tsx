@@ -11,7 +11,7 @@ export default function ChampionshipStats() {
 
         <div className="flex flex-col gap-3 items-center">
           <div className="md:text-lg text-xl font-medium">Champion Of</div>
-          <div className="flex gap-2 items-center">
+          <div className="flex flex-wrap gap-2 justify-center items-center max-md:px-4">
             {["2010", "2011", "2012", "2013"].map((year) => (
               <a
                 key={year}
