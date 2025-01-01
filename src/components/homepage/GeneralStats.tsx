@@ -1,29 +1,55 @@
 export default function GeneralStats() {
+  const stats = [
+    "15 Full Seasons",
+    "53 Wins",
+    "122 Podiums",
+    "38 Fastest laps",
+    "8 Hattricks",
+    "4 Grand slams",
+    "Record for the most pole positions in a season",
+    "The youngest pole sitter in history",
+    "The youngest world champion in history",
+  ];
+
+  const teams = [
+    "BMW Sauber",
+    "Red Bull Racing",
+    "Scuderia Ferrari",
+    "Aston Martin",
+  ];
   return (
-    <div id="general-stats" className="page max-md:flex-col flex justify-center">
+    <div
+      id="general-stats"
+      className="page max-md:!h-[145vh] max-md:flex-col flex justify-center"
+    >
+      <div
+        className="page-half-banner"
+        style={{
+          backgroundImage: `url("/images/2015Maleysia.jpg")`,
+        }}
+      ></div>
+
       <div className="md:w-1/2 md:h-full h-1/2 bg-indigo-600/10 justify-center items-center flex flex-col gap-4">
-        <h1 className="text-xl md:text-3xl font-bold">4 Time World Champion</h1>
+        <h1 className="text-xl md:text-3xl font-bold">299 Races</h1>
 
         <div className="flex flex-col gap-3 items-center">
-          <div className="md:text-lg text-xl font-medium">Champion Of</div>
+          {stats.map((stat) => (
+            <div key={stat} className="md:text-lg text-xl font-medium">
+              {stat}
+            </div>
+          ))}
+
           <div className="flex gap-2 items-center">
-            {["2010", "2011", "2012", "2013"].map((year) => (
-              <a key={year} href={`#${year}-wdc`}>
+            {teams.map((team) => (
+              <a key={team} href={`#${team.replaceAll(" ", "-").toLowerCase()}`}>
                 <div className="text-sm md:text-base font-semibold bg-indigo-600/20 px-2 py-1 rounded">
-                  {year}
+                  {team}
                 </div>
               </a>
             ))}
           </div>
         </div>
       </div>
-
-      <div
-        className="page-half-banner"
-        style={{
-          backgroundImage: `url("/images/four-time-world-champion.avif")`,
-        }}
-      ></div>
     </div>
   );
 }

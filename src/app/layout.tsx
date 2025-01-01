@@ -15,7 +15,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "A Timeless Tribute to a Racing Legend - SV5 by Yefee",
   description: "Sebastian Vettel's F1 Team Tribute, made by Yefee",
-  keywords: ["Sebastian Vettel", "F1", "SV5", "Seb", "Fan made", "Yefee"],
+  keywords: [
+    "Sebastian Vettel",
+    "F1",
+    "Formula 1",
+    "SV5",
+    "Seb",
+    "Fan made",
+    "Danke Seb",
+    "Danke Sebastian",
+    "Yefee",
+  ],
   openGraph: {
     title: "A Timeless Tribute to a Racing Legend - SV5 by Yefee",
     description: "Sebastian Vettel's F1 Team Tribute, made by Yefee",
