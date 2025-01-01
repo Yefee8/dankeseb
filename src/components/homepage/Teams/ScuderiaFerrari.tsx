@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ScuderiaFerrari() {
   return (
-    <div id="scuderia-ferrari" className="page max-xl:!h-[1600px]  max-md:flex-col flex justify-center">
+    <div id="scuderia-ferrari" className="page max-xl:!h-[1600px] max-md:flex-col flex justify-center">
       <Image
         width={1000}
         height={1000}

@@ -13,7 +13,7 @@ export default function Header() {
           Stats
         </a>
         <a
-          href="#bmw-sauber"
+          href="#teams"
           className="text-base px-2 py-1 hover:bg-red-500/70 rounded-lg duration-150"
         >
           Teams

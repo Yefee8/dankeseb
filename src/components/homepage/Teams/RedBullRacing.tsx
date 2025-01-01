@@ -4,7 +4,7 @@ export default function RedbullRacing() {
   return (
     <div
       id="red-bull-racing"
-      className="page max-xl:!h-[1400px]  max-md:flex-col flex justify-center"
+      className="page max-xl:!h-[1600px]  max-md:flex-col flex justify-center"
     >
       <div className="md:w-1/2 md:h-full h-1/2 bg-[#001c45]/40 justify-center items-center flex flex-col gap-4">
         <h1 className="text-xl md:text-3xl font-bold">Red Bull Racing</h1>
@@ -33,7 +33,7 @@ export default function RedbullRacing() {
         height={1000}
         src="/images/RedbullRacing.webp"
         className="page-half-banner"
-        alt="Sebastian Vettel Redbull Racing"
+        alt="Sebastian Vettel Red Bull Racing"
       />
     </div>
   );
