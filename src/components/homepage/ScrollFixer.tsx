@@ -81,13 +81,18 @@ export default function ScrollFixer() {
                   isScrolling = true;
                 }
 
+                if (activeMain === mains.indexOf("ending")) {
+                  setCloseScrollFixer(true);
+                  localStorage.setItem("closeScrollFixer", "true");
+                }
+
                 setTimeout(() => {
                   isScrolling = false;
                 }, 800);
               }
             } else {
               if (activeMain === mains.indexOf("danke-seb")) return;
-              if (
+              else if (
                 activeMain !== mains.indexOf("teams") &&
                 activeMain !== mains.indexOf("best-races")
               ) {
