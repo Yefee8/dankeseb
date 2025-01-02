@@ -3,11 +3,10 @@ import ChampionshipStats from "@/components/homepage/ChampionshipStats";
 import GeneralStats from "@/components/homepage/GeneralStats";
 import Teams from "@/components/homepage/Teams/Teams";
 import BestRaces from "@/components/homepage/BestRaces/BestRaces";
+import Ending from "@/components/homepage/Ending";
 
 export default function Home() {
-  // TODO: Add Header & Footer ~
-  // TODO: add greatest races of seb ~
-  // TODO: make an gallery page, select images from start by query params. ~
+  // TODO: make an gallery page to give credit original image owners. ~
   // TODO: add seb's best edits part ~
 
   return (
@@ -21,6 +20,8 @@ export default function Home() {
       <Teams />
 
       <BestRaces />
+
+      <Ending />
     </div>
   );
 }
