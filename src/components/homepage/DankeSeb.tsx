@@ -1,4 +1,3 @@
-import { SlArrowDownCircle } from "react-icons/sl";
 import Image from "next/image";
 export default function DankeSeb() {
   return (
