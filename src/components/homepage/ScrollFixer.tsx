@@ -44,93 +44,96 @@ export default function ScrollFixer() {
   useEffect(() => {
     if (!closeScrollFixer || closeScrollFixer !== "loading") {
       if (typeof window !== "undefined") {
-        let activeMain = 0;
-        let activeSub = 0;
-        let lastScrollTop = 0;
-        let isScrolling = false;
-        if (closeScrollFixer || closeScrollFixer === "loading") return;
-        window.onscroll = (e) => {
+        if (window.innerWidth > 767) {
+          let activeMain = 0;
+          let activeSub = 0;
+          let lastScrollTop = 0;
+          let isScrolling = false;
           if (closeScrollFixer || closeScrollFixer === "loading") return;
-          if (!isScrolling) {
-            if (window.scrollY > lastScrollTop) {
-              if (activeMain === mains.indexOf("ending")) return;
-              if (
-                activeMain !== mains.indexOf("teams") &&
-                activeMain !== mains.indexOf("best-races")
-              ) {
-                isScrolling = true;
-                activeMain++;
-                window.location.hash = mains[activeMain];
-                setTimeout(() => {
-                  isScrolling = false;
-                }, 800);
-              } else {
-                isScrolling = true;
-                const el = document.getElementById(mains[activeMain]);
+          window.onscroll = (e) => {
+            if (closeScrollFixer || closeScrollFixer === "loading") return;
+            if (!isScrolling) {
+              if (window.scrollY > lastScrollTop) {
+                if (activeMain === mains.indexOf("ending")) return;
                 if (
-                  el?.children.length &&
-                  activeSub + 1 >= el?.children.length
+                  activeMain !== mains.indexOf("teams") &&
+                  activeMain !== mains.indexOf("best-races")
                 ) {
+                  isScrolling = true;
                   activeMain++;
-                  activeSub = 0;
-                  isScrolling = true;
                   window.location.hash = mains[activeMain];
+                  setTimeout(() => {
+                    isScrolling = false;
+                  }, 800);
                 } else {
-                  activeSub++;
-                  window.location.hash = `${el?.children[activeSub].id}`;
                   isScrolling = true;
-                }
-
-                if (activeMain === mains.indexOf("ending")) {
-                  setCloseScrollFixer(true);
-                  localStorage.setItem("closeScrollFixer", "true");
-                }
-
-                setTimeout(() => {
-                  isScrolling = false;
-                }, 800);
-              }
-            } else {
-              if (activeMain === mains.indexOf("danke-seb")) return;
-              else if (
-                activeMain !== mains.indexOf("teams") &&
-                activeMain !== mains.indexOf("best-races")
-              ) {
-                isScrolling = true;
-                activeMain--;
-                window.location.hash = mains[activeMain];
-                setTimeout(() => {
-                  isScrolling = false;
-                }, 800);
-              } else {
-                isScrolling = true;
-                const el = document.getElementById(mains[activeMain]);
-                if (el?.children.length && activeSub === 0) {
-                  if (activeMain === mains.indexOf("teams")) {
-                    activeMain--;
+                  const el = document.getElementById(mains[activeMain]);
+                  if (
+                    el?.children.length &&
+                    activeSub + 1 >= el?.children.length
+                  ) {
+                    activeMain++;
+                    activeSub = 0;
                     isScrolling = true;
                     window.location.hash = mains[activeMain];
                   } else {
-                    activeMain--;
-                    let newEl: any = document.getElementById(mains[activeMain]);
-                    activeSub = newEl?.children.length - 1;
-                    window.location.hash = `${newEl?.children[activeSub].id}`;
+                    activeSub++;
+                    window.location.hash = `${el?.children[activeSub].id}`;
                     isScrolling = true;
                   }
-                } else {
-                  activeSub--;
-                  window.location.hash = `${el?.children[activeSub].id}`;
-                  isScrolling = true;
+
+                  if (activeMain === mains.indexOf("ending")) {
+                    setCloseScrollFixer(true);
+                    localStorage.setItem("closeScrollFixer", "true");
+                  }
+
+                  setTimeout(() => {
+                    isScrolling = false;
+                  }, 800);
                 }
-                setTimeout(() => {
-                  isScrolling = false;
-                }, 800);
+              } else {
+                if (activeMain === mains.indexOf("danke-seb")) return;
+                else if (
+                  activeMain !== mains.indexOf("teams") &&
+                  activeMain !== mains.indexOf("best-races")
+                ) {
+                  isScrolling = true;
+                  activeMain--;
+                  window.location.hash = mains[activeMain];
+                  setTimeout(() => {
+                    isScrolling = false;
+                  }, 800);
+                } else {
+                  isScrolling = true;
+                  const el = document.getElementById(mains[activeMain]);
+                  if (el?.children.length && activeSub === 0) {
+                    if (activeMain === mains.indexOf("teams")) {
+                      activeMain--;
+                      isScrolling = true;
+                      window.location.hash = mains[activeMain];
+                    } else {
+                      activeMain--;
+                      let newEl: any = document.getElementById(
+                        mains[activeMain]
+                      );
+                      activeSub = newEl?.children.length - 1;
+                      window.location.hash = `${newEl?.children[activeSub].id}`;
+                      isScrolling = true;
+                    }
+                  } else {
+                    activeSub--;
+                    window.location.hash = `${el?.children[activeSub].id}`;
+                    isScrolling = true;
+                  }
+                  setTimeout(() => {
+                    isScrolling = false;
+                  }, 800);
+                }
               }
             }
-          }
-
-          lastScrollTop = window.scrollY;
-        };
+            lastScrollTop = window.scrollY;
+          };
+        }
       }
     }
 
@@ -144,7 +147,7 @@ export default function ScrollFixer() {
       {!closeScrollFixer && position !== "top" && (
         <button
           onClick={() => window.scrollTo(0, window.scrollY - 50)}
-          className="fixed top-10 left-[50%] translate-x-[-50%] rounded-full z-50 p-4 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
+          className="max-md:hidden fixed top-10 left-[50%] translate-x-[-50%] rounded-full z-50 p-4 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
         >
           <FaAngleDoubleUp />
         </button>
@@ -154,7 +157,7 @@ export default function ScrollFixer() {
         {!closeScrollFixer && position !== "bottom" && (
           <button
             onClick={() => window.scrollTo(0, window.scrollY + 50)}
-            className="rounded-full z-50 p-4 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
+            className="max-md:hidden rounded-full z-50 p-4 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
           >
             <FaAngleDoubleDown />
           </button>
@@ -169,7 +172,7 @@ export default function ScrollFixer() {
             );
             window.location.reload();
           }}
-          className="font-medium rounded-full z-50 p-4 bg-indigo-600 text-base "
+          className="max-md:hidden font-medium rounded-full z-50 p-4 bg-indigo-600 text-base "
         >
           {closeScrollFixer ? "Open" : "Close"} Scroll Help
         </button>
