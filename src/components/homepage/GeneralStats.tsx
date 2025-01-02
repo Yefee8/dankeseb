@@ -38,7 +38,7 @@ export default function GeneralStats() {
 
         <div className="flex flex-col gap-3 items-center">
           {stats.map((stat) => (
-            <div key={stat} className="md:text-lg text-xl font-medium">
+            <div key={stat} className="md:text-lg text-center text-xl font-medium">
               {stat}
             </div>
           ))}
