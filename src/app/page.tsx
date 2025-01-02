@@ -4,13 +4,14 @@ import GeneralStats from "@/components/homepage/GeneralStats";
 import Teams from "@/components/homepage/Teams/Teams";
 import BestRaces from "@/components/homepage/BestRaces/BestRaces";
 import Ending from "@/components/homepage/Ending";
+import ScrollFixer from "@/components/homepage/ScrollFixer";
 
 export default function Home() {
   // TODO: make an gallery page to give credit original image owners. ~
   // TODO: add seb's best edits part ~
 
   return (
-    <div>
+    <div id="homepage">
       <DankeSeb />
 
       <ChampionshipStats />
@@ -22,6 +23,8 @@ export default function Home() {
       <BestRaces />
 
       <Ending />
+
+      <ScrollFixer />
     </div>
   );
 }
