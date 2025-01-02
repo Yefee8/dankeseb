@@ -138,6 +138,7 @@ export default function BestRaces() {
           <Image
             width={1000}
             height={1000}
+            loading="lazy"
             src={race.image}
             className="page-half-banner"
             alt={`Sebastian Vettel ${race.title}`}
