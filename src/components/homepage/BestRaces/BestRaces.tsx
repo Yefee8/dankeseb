@@ -131,7 +131,7 @@ export default function BestRaces() {
         <div
           key={race.id}
           id={race.id}
-          className={`page max-md:!h-[1800px] flex justify-center max-md:flex-col ${
+          className={`page max-md:!max-h-[1400px] colored-row max-md:!h-auto max-md:pb-8 max-md:gap-8 flex md:justify-center justify-start items-center max-md:flex-col ${
             i % 2 === 0 ? "flex-row" : "flex-row-reverse"
           }`}
         >
@@ -143,7 +143,7 @@ export default function BestRaces() {
             className="page-half-banner"
             alt={`Sebastian Vettel ${race.title}`}
           />
-          <div className="md:w-1/2 md:h-full h-1/2 bg-[#001c45]/40 justify-center items-center flex flex-col gap-4">
+          <div className="md:w-1/2 md:h-full h-1/2 justify-center items-center flex flex-col gap-4">
             <h2 className="text-xl md:text-3xl font-bold">{race.title}</h2>
 
             <p

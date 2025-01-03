@@ -23,7 +23,7 @@ export default function GeneralStats() {
   return (
     <div
       id="general-stats"
-      className="page max-md:!h-[1200px] max-md:flex-col flex justify-center"
+      className="page max-md:!h-[1200px] items-center max-md:flex-col flex justify-center"
     >
       <Image
         width={1000}

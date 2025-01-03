@@ -19,7 +19,7 @@ html {
 }
 
 .page-half-banner {
-  @apply md:w-1/2 h-1/2 max-w-full md:h-full object-cover object-center;
+  @apply w-auto h-[500px] max-w-[50%] object-cover object-center max-md:h-[50vh] max-md:max-w-full;
 }
 
 .page-content {
@@ -35,4 +35,12 @@ img {
   :root {
     --radius: 0.5rem;
   }
+}
+
+.colored-row {
+  @apply bg-[#001c45]/40;
+}
+
+.colored-row:nth-child(odd) {
+  @apply bg-[#001c45]/20;
 }

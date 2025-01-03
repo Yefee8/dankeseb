@@ -108,20 +108,21 @@ export default function Teams() {
         <div
           key={team.id}
           id={team.id}
-          className={`page max-md:!h-[1600px] flex justify-center max-md:flex-col ${
+          className={`page max-md:!max-h-[1200px]  max-md:!h-auto max-md:pb-8 max-md:gap-8 flex md:justify-center justify-start items-center max-md:flex-col  ${team.color} ${
             i % 2 === 0 ? "flex-row-reverse" : "flex-row"
           }`}
         >
-          <Image
-            width={1000}
-            height={1000}
-            loading="lazy"
-            src={team.image}
-            className="page-half-banner"
-            alt={`Sebastian Vettel ${team.title}`}
-          />
+            <Image
+              width={1000}
+              height={1000}
+              loading="lazy"
+              src={team.image}
+              className="page-half-banner"
+              alt={`Sebastian Vettel ${team.title}`}
+            />
+
           <div
-            className={`md:w-1/2 md:h-full h-1/2 ${team.color} justify-center items-center flex flex-col gap-4`}
+            className={`md:w-1/2 md:h-full h-1/2 justify-center items-center flex flex-col gap-4`}
           >
             <h2 className="text-xl md:text-3xl font-bold">{team.title}</h2>
 
