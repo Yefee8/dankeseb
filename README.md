@@ -1,5 +1,12 @@
 # Danke, Sebastian.
-The project is not finished yet
+I've wanted to make this web application for a long time and I finally started and finished it, Sebastian Vettel, we will continue to keep your legacy in this sport alive.
+[website](https://dankeseb.vercel.app/)
+
+## What is this web app?
+It's a fan website for Sebastian Vettel's F1 Career, It's been developed by 1 sixteen-year-old person so it may not be great but I'm bloody proud of it.
+
+## Is this completely open-source?
+Yup, it is! (except for the edits route's back-end.)
 
 ## Pagespeed
 [pagespeed](https://pagespeed.web.dev/analysis/https-dankeseb-vercel-app/7a22kkju66?form_factor=mobile)
