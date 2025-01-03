@@ -9,7 +9,7 @@ It's a fan website for Sebastian Vettel's F1 Career, It's been developed by 1 si
 Yup, it is! (except for the edits route's back-end.)
 
 ## Pagespeed
-[pagespeed](https://pagespeed.web.dev/analysis/https-dankeseb-vercel-app/7a22kkju66?form_factor=mobile)
+[pagespeed](https://pagespeed.web.dev/analysis/https-dankeseb-vercel-app/91gjp9mqgr)
 
 ## Gallery, credit for original image owners.
 [4 Time World Chapion - From redbull.com](https://img.redbull.com/images/q_auto,f_auto/redbullcom/2013/10/28/1331617873485_22/sebastian-vettel-formula-one-indian-grand-prix-fourth-world-championship-celebration)
