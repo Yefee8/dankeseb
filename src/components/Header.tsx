@@ -31,7 +31,7 @@ export default function Header() {
           Edits
         </a>
         <a
-          href="/gallery"
+          href="https://github.com/Yefee8/dankeseb?tab=readme-ov-file#gallery-credit-for-original-image-owners"
           className="text-base px-2 py-1 hover:bg-yellow-500/70 rounded-lg duration-150"
         >
           Gallery
