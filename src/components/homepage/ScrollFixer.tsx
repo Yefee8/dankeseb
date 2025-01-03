@@ -45,13 +45,32 @@ export default function ScrollFixer() {
     if (!closeScrollFixer || closeScrollFixer !== "loading") {
       if (typeof window !== "undefined") {
         if (window.innerWidth > 767) {
-          let activeMain = 0;
-          let activeSub = 0;
+          let activeMain = window.location.hash
+            ? mains.find(
+                (main) => main === window.location.hash.replace("#", "")
+              )
+              ? mains.indexOf(window.location.hash.replace("#", ""))
+              : window.location.hash.replace("#", "").includes("grand-prix")
+              ? mains.indexOf("best-races")
+              : mains.indexOf("teams")
+            : 0;
+
+          let activeSub = window.location.hash
+            ? mains.find(
+                (main) => main === window.location.hash.replace("#", "")
+              )
+              ? 0
+              : Array(document.getElementById(mains[activeMain])?.children)
+                  .map((e: any) => {
+                    e.id;
+                  })
+                  //@ts-ignore
+                  .indexOf(window.location.hash.replace("#", ""))
+            : 0;
           let lastScrollTop = 0;
           let isScrolling = false;
           if (closeScrollFixer || closeScrollFixer === "loading") return;
           window.onscroll = (e) => {
-            if (closeScrollFixer || closeScrollFixer === "loading") return;
             if (!isScrolling) {
               if (window.scrollY > lastScrollTop) {
                 if (activeMain === mains.indexOf("ending")) return;
