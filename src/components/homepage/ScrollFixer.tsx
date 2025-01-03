@@ -147,7 +147,7 @@ export default function ScrollFixer() {
       {!closeScrollFixer && position !== "top" && (
         <button
           onClick={() => window.scrollTo(0, window.scrollY - 50)}
-          className="max-md:hidden fixed top-10 left-[50%] translate-x-[-50%] rounded-full z-50 p-4 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
+          className="max-md:hidden fixed top-10 left-[50%] translate-x-[-50%] rounded-full z-50 p-1.5 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
         >
           <FaAngleDoubleUp />
         </button>
@@ -157,7 +157,7 @@ export default function ScrollFixer() {
         {!closeScrollFixer && position !== "bottom" && (
           <button
             onClick={() => window.scrollTo(0, window.scrollY + 50)}
-            className="max-md:hidden rounded-full z-50 p-4 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
+            className="max-md:hidden rounded-full z-50 p-1.5 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
           >
             <FaAngleDoubleDown />
           </button>
@@ -172,9 +172,9 @@ export default function ScrollFixer() {
             );
             window.location.reload();
           }}
-          className="max-md:hidden font-medium rounded-full z-50 p-4 bg-indigo-600 text-base "
+          className="max-md:hidden font-medium rounded-full z-50 p-1 px-2 bg-indigo-600 text-base "
         >
-          {closeScrollFixer ? "Open" : "Close"} Scroll Help
+          {closeScrollFixer ? "Enable" : "Disable"} Scroll Help
         </button>
       </div>
     </>
