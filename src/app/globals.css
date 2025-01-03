@@ -19,7 +19,7 @@ html {
 }
 
 .page-half-banner {
-  @apply w-auto h-[500px] max-w-[50%] object-cover object-center max-md:h-[50vh] max-md:max-w-full;
+  @apply md:w-1/2 h-[500px] max-w-[50%] object-cover object-center max-md:h-[50vh] max-md:max-w-full;
 }
 
 .page-content {
