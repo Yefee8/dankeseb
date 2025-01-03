@@ -131,7 +131,7 @@ export default function BestRaces() {
         <div
           key={race.id}
           id={race.id}
-          className={`page max-md:!h-[1600px] flex justify-center max-md:flex-col ${
+          className={`page max-md:!h-[1800px] flex justify-center max-md:flex-col ${
             i % 2 === 0 ? "flex-row" : "flex-row-reverse"
           }`}
         >
