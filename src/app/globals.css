@@ -2,16 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-}
-
 body {
+  background: #111021;
   color: #fff;
-  background: var(--background);
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -19,19 +14,25 @@ html{
   @apply h-screen w-full relative;
 }
 
-.page-banner{
+.page-banner {
   @apply w-full h-full absolute left-0 top-0 -z-10 object-cover object-center brightness-[55%];
 }
 
-.page-half-banner{
+.page-half-banner {
   @apply md:w-1/2 h-1/2 max-w-full md:h-full object-cover object-center;
 }
 
-.page-content{
+.page-content {
   @apply z-10;
 }
 
-img{
+img {
   user-select: none;
   -webkit-user-drag: none;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }

@@ -7,19 +7,19 @@ export default function Header() {
 
       <div className="flex flex-wrap justify-center gap-2 items-center font-medium">
         <a
-          href="#general-stats"
+          href="/#general-stats"
           className="text-base px-2 py-1 hover:bg-indigo-500/70 rounded-lg duration-150"
         >
           Stats
         </a>
         <a
-          href="#teams"
+          href="/#teams"
           className="text-base px-2 py-1 hover:bg-red-500/70 rounded-lg duration-150"
         >
           Teams
         </a>
         <a
-          href="#best-races"
+          href="/#best-races"
           className="text-base px-2 py-1 hover:bg-[#001344]/70 rounded-lg duration-150"
         >
           Best Races

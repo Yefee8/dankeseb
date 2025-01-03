@@ -33,7 +33,7 @@ export default function GeneralStats() {
         alt="Sebastian Vettel 2015 Malaysia Grand Prix"
       />
 
-      <div className="md:w-1/2 md:h-full h-1/2 bg-indigo-600/10 justify-center items-center flex flex-col gap-4">
+      <div className="md:w-1/2 md:h-full h-1/2 justify-center items-center flex flex-col gap-4">
         <h2 className="text-xl md:text-3xl font-bold">299 Races</h2>
 
         <div className="flex flex-col gap-3 items-center">
