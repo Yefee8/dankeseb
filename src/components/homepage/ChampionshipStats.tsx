@@ -7,7 +7,7 @@ export default function ChampionshipStats() {
       className="page max-md:flex-col flex justify-center"
     >
       <div className="md:w-1/2 md:h-full h-1/2 bg-indigo-600/10 justify-center items-center flex flex-col gap-4">
-        <h1 className="text-xl md:text-3xl font-bold">4 Time World Champion</h1>
+        <h2 className="text-xl md:text-3xl font-bold">4 Time World Champion</h2>
 
         <div className="flex flex-col gap-3 items-center">
           <div className="md:text-lg text-xl font-medium">Champion Of</div>

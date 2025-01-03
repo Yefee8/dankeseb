@@ -144,7 +144,7 @@ export default function BestRaces() {
             alt={`Sebastian Vettel ${race.title}`}
           />
           <div className="md:w-1/2 md:h-full h-1/2 bg-[#001c45]/40 justify-center items-center flex flex-col gap-4">
-            <h1 className="text-xl md:text-3xl font-bold">{race.title}</h1>
+            <h2 className="text-xl md:text-3xl font-bold">{race.title}</h2>
 
             <p
               dangerouslySetInnerHTML={{

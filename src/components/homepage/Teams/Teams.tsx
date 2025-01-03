@@ -123,7 +123,7 @@ export default function Teams() {
           <div
             className={`md:w-1/2 md:h-full h-1/2 ${team.color} justify-center items-center flex flex-col gap-4`}
           >
-            <h1 className="text-xl md:text-3xl font-bold">{team.title}</h1>
+            <h2 className="text-xl md:text-3xl font-bold">{team.title}</h2>
 
             <p className="text-base md:text-lg font-medium md:px-16 px-8 text-center">
               {team.description}

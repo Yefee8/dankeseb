@@ -7,7 +7,6 @@ import Ending from "@/components/homepage/Ending";
 import ScrollFixer from "@/components/homepage/ScrollFixer";
 
 export default function Home() {
-  // TODO: make an gallery page to give credit original image owners. ~
   // TODO: add seb's best edits part ~
 
   return (
