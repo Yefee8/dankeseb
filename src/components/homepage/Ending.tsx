@@ -2,7 +2,7 @@ export default function Ending() {
   return (
     <div
       id="ending"
-      className="page flex flex-col items-center gap-8 justify-center"
+      className="h-screen flex flex-col items-center gap-8 justify-center"
     >
       <h2 className="text-xl px-8 md:px-16 md:text-3xl font-extrabold text-center">
         Sebastian Vettel, we will continue to keep your legacy in this sport

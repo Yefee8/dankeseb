@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function DankeSeb() {
   return (
-    <div id="danke-seb" className="page flex justify-center items-center">
+    <div id="danke-seb" className="h-screen flex justify-center items-center">
       <div className="page-content items-center flex flex-col gap-4">
         <h1 className="text-2xl md:text-4xl font-extrabold">
           Danke, Sebastian.
