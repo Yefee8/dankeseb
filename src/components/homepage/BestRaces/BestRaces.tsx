@@ -122,7 +122,7 @@ export default function BestRaces() {
       title: "2021 Baku Grand Prix",
       description: `The 2021 Baku Grand Prix was a pivotal moment in Formula 1, not just for Sebastian Vettel, but for Aston Martin as well. Starting from 11th on the grid, Vettel faced a significant challenge in a race filled with chaos and uncertainty. Despite the obstacles, Vettel showed his immense experience and racecraft, working his way up through the field to finish in an impressive 2nd place. The race itself was unpredictable, with multiple retirements and drama unfolding as the race progressed. As the circuit's demanding corners and narrow streets created difficulties for many drivers, Vettel's tire management and steady pace allowed him to capitalize on the mistakes of others. He climbed up the order, showing remarkable consistency and determination. By the end of the race, Vettel finished in 2nd, securing Aston Martin's first-ever podium in their modern iteration as a team. This achievement marked a significant milestone for the team, and it was also a reminder of Vettel's exceptional driving ability. Despite not having the fastest car, his strategic approach and flawless execution on track earned him the podium and helped Aston Martin establish themselves as a competitive force. The 2021 Baku Grand Prix was a monumental moment for both Sebastian Vettel and Aston Martin, with Vettel showing that his experience and skill could overcome any challenge, even when the odds were stacked against him.`,
       image: "/images/races/2021-Baku-Grand-Prix.jpg",
-    }
+    },
   ];
 
   return (
@@ -131,18 +131,21 @@ export default function BestRaces() {
         <div
           key={race.id}
           id={race.id}
-          className={`page max-md:!max-h-[1400px] colored-row max-md:!h-auto max-md:pb-8 max-md:gap-8 flex md:justify-center justify-start items-center max-md:flex-col ${
+          className={`page max-md:!max-h-[1400px] colored-row max-md:!h-auto max-md:pb-8 max-md:gap-8 flex md:justify-between justify-start items-center max-md:flex-col ${
             i % 2 === 0 ? "flex-row" : "flex-row-reverse"
           }`}
         >
-          <Image
-            width={1000}
-            height={1000}
-            loading="lazy"
-            src={race.image}
-            className="page-half-banner"
-            alt={`Sebastian Vettel ${race.title}`}
-          />
+          <div className="page-half-banner-container">
+            <Image
+              width={1000}
+              height={1000}
+              loading="lazy"
+              src={race.image}
+              className="page-half-banner"
+              alt={`Sebastian Vettel ${race.title}`}
+            />
+          </div>
+
           <div className="md:w-1/2 md:h-full h-1/2 justify-center items-center flex flex-col gap-4">
             <h2 className="text-xl md:text-3xl font-bold">{race.title}</h2>
 

@@ -4,7 +4,7 @@ export default function ChampionshipStats() {
   return (
     <div
       id="championship-stats"
-      className="page max-md:flex-col pt-16 max-md:gap-8 flex md:justify-center items-center"
+      className="page max-md:flex-col pt-16 max-md:gap-8 flex md:justify-between items-center"
     >
       <div className="md:w-1/2 md:h-full h-1/2 justify-center items-center flex flex-col gap-4">
         <h2 className="text-xl md:text-3xl font-bold">4 Time World Champion</h2>
@@ -27,13 +27,15 @@ export default function ChampionshipStats() {
         </div>
       </div>
 
-      <Image
-        width={1000}
-        height={1000}
-        src="/images/four-time-world-champion.avif"
-        className="page-half-banner"
-        alt="Sebastian Vettel 4 Time World Champion"
-      />
+      <div className="page-half-banner-container">
+        <Image
+          width={1000}
+          height={1000}
+          src="/images/four-time-world-champion.avif"
+          className="page-half-banner"
+          alt="Sebastian Vettel 4 Time World Champion"
+        />
+      </div>
     </div>
   );
 }

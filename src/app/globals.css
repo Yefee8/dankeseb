@@ -18,9 +18,13 @@ html {
   @apply w-full h-full absolute left-0 top-0 -z-10 object-cover object-center brightness-[55%];
 }
 
-.page-half-banner {
-  @apply md:w-1/2 h-[500px] max-w-[50%] object-cover object-center max-md:h-[50vh] max-md:max-w-full;
+.page-half-banner-container{
+  @apply flex justify-end overflow-hidden h-[500px] max-w-[50%] object-cover object-center max-md:h-[50vh] max-md:max-w-full;
 }
+.page-half-banner {
+  @apply h-[500px] w-full object-cover object-center max-md:h-[50vh] max-md:max-w-full hover:scale-125 ease-in duration-150;
+}
+
 
 .page-content {
   @apply z-10;

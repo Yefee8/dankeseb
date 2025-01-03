@@ -23,22 +23,27 @@ export default function GeneralStats() {
   return (
     <div
       id="general-stats"
-      className="page pb-16 items-center max-md:flex-col max-md:gap-8 flex md:justify-center md:px-12"
+      className="page pb-16 items-center max-md:flex-col max-md:gap-8 flex md:justify-between"
     >
-      <Image
-        width={1000}
-        height={1000}
-        src="/images/2015Maleysia.jpg"
-        className="page-half-banner"
-        alt="Sebastian Vettel 2015 Malaysia Grand Prix"
-      />
+      <div className="page-half-banner-container">
+        <Image
+          width={1000}
+          height={1000}
+          src="/images/2015Maleysia.jpg"
+          className="page-half-banner"
+          alt="Sebastian Vettel 2015 Malaysia Grand Prix"
+        />
+      </div>
 
       <div className="md:w-1/2 md:h-full h-1/2 justify-center items-center flex flex-col gap-4">
         <h2 className="text-xl md:text-3xl font-bold">299 Races</h2>
 
         <div className="flex flex-col gap-3 items-center">
           {stats.map((stat) => (
-            <p key={stat} className="md:text-lg text-center text-xl font-medium">
+            <p
+              key={stat}
+              className="md:text-lg text-center text-xl font-medium"
+            >
               {stat}
             </p>
           ))}

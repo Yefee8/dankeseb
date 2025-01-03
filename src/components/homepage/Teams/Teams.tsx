@@ -108,10 +108,11 @@ export default function Teams() {
         <div
           key={team.id}
           id={team.id}
-          className={`page max-md:!max-h-[1200px]  max-md:!h-auto max-md:pb-8 max-md:gap-8 flex md:justify-center justify-start items-center max-md:flex-col  ${team.color} ${
-            i % 2 === 0 ? "flex-row-reverse" : "flex-row"
-          }`}
+          className={`page max-md:!max-h-[1200px]  max-md:!h-auto max-md:pb-8 max-md:gap-8 flex md:justify-between justify-start items-center max-md:flex-col  ${
+            team.color
+          } ${i % 2 === 0 ? "flex-row-reverse" : "flex-row"}`}
         >
+          <div className="page-half-banner-container">
             <Image
               width={1000}
               height={1000}
@@ -120,6 +121,7 @@ export default function Teams() {
               className="page-half-banner"
               alt={`Sebastian Vettel ${team.title}`}
             />
+          </div>
 
           <div
             className={`md:w-1/2 md:h-full h-1/2 justify-center items-center flex flex-col gap-4`}
