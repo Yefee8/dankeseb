@@ -11,7 +11,7 @@ html {
 }
 
 .page {
-  @apply md:py-16 md:h-screen w-full relative;
+  @apply md:py-16 md:h-screen w-full relative px-16;
 }
 
 .page-banner {
@@ -19,7 +19,7 @@ html {
 }
 
 .page-half-banner-container{
-  @apply flex justify-end overflow-hidden h-[500px] w-[50%] object-cover object-center max-md:h-[50vh] max-md:w-full mx-8;
+  @apply flex justify-end overflow-hidden h-[500px] w-[50%] object-cover object-center max-md:h-[50vh] max-md:w-full;
 }
 
 .page-half-banner {
