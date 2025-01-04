@@ -23,7 +23,7 @@ html {
 }
 
 .page-half-banner {
-  @apply h-[500px] w-full object-cover object-center max-md:h-[50vh] max-md:max-w-full hover:scale-125 ease-in duration-150;
+  @apply h-[500px] w-full object-cover object-center max-md:h-[50vh] max-md:max-w-full hover:scale-125 ease-in duration-300;
 }
 
 .page-content {

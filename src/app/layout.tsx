@@ -66,9 +66,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
       >
         <Header />
+
         {children}
-        <Footer />
         <ToastContainer />
+        <Footer />
       </body>
 
       <Analytics />

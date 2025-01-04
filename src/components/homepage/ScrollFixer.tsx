@@ -4,8 +4,6 @@ import { useEffect, useState } from "react";
 import { FaAngleDoubleDown, FaAngleDoubleUp } from "react-icons/fa";
 
 export default function ScrollFixer() {
-  // TODO: its sending ending to best races. Fix this.
-
   const [closeScrollFixer, setCloseScrollFixer] = useState<boolean | string>(
     "loading"
   );

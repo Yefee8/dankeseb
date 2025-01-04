@@ -1,6 +1,28 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function Header() {
+  const [bg, setBg] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setBg(true);
+      } else {
+        setBg(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="absolute top-0 left-0 w-full py-2 flex justify-center md:justify-between gap-4 flex-wrap items-center md:px-16 px-8 z-50 duration-250">
+    <header
+      className={`fixed top-0 border-b-2 border-red-500/10 duration-150 left-0 w-full py-2 flex justify-center md:justify-between gap-4 flex-wrap items-center md:px-16 px-8 z-50 duration-250 
+    ${bg ? "bg-[#111021]/50" : "bg-transparent"}`}
+    >
       <a href="/">
         <h1 className="text-2xl font-bold cursor-pointer">Danke Seb</h1>
       </a>
@@ -43,6 +65,6 @@ export default function Header() {
           Github
         </a>
       </div>
-    </div>
+    </header>
   );
 }
