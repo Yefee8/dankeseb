@@ -11,7 +11,7 @@ html {
 }
 
 .page {
-  @apply md:py-16 md:h-screen w-full relative px-16;
+  @apply md:py-16 md:h-screen w-full relative md:px-16;
 }
 
 .page-banner {

@@ -21,7 +21,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 border-b-2 duration-150 left-0 w-full py-2 flex justify-center md:justify-between gap-4 flex-wrap items-center md:px-16 px-8 z-50 duration-250 
+      className={`max-md:fixed absolute top-0 border-b-2 duration-150 left-0 w-full py-2 flex justify-center md:justify-between gap-4 flex-wrap items-center md:px-16 px-8 z-50 duration-250 
     ${bg ? "bg-[#111021]/50 border-red-500/10" : "bg-transparent border-transparent"}`}
     >
       <a href="/">
