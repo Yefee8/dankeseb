@@ -10,7 +10,7 @@ export default async function Home() {
 
   console.log(res);
   return (
-    <div className="w-full min-h-screen flex flex-col gap-16 py-24 px-8 md:px-16">
+    <div className="w-full min-h-screen flex flex-col gap-16 py-36 md:py-24 px-8 md:px-16">
       <div className="flex flex-col gap-8">
         <h1 className="text-2xl font-bold">
           Best edits of Sebastian Vettel
