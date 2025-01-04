@@ -164,13 +164,13 @@ export default function ScrollFixer() {
       {!closeScrollFixer && position !== "top" && (
         <button
           onClick={() => window.scrollTo(0, window.scrollY - 50)}
-          className="max-md:hidden fixed top-10 left-[50%] translate-x-[-50%] rounded-full z-50 p-1.5 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
+          className="max-md:hidden fixed top-20 left-[50%] translate-x-[-50%] rounded-full z-50 p-1.5 bg-indigo-500/50 focus:bg-indigo-600/70 hover:bg-indigo-600/70 text-base duration-150"
         >
           <FaAngleDoubleUp />
         </button>
       )}
 
-      <div className="flex flex-col-reverse gap-2 items-center fixed bottom-10 left-[50%] translate-x-[-50%]">
+      <div className="flex flex-col-reverse gap-2 items-center fixed bottom-20 left-[50%] translate-x-[-50%]">
         {!closeScrollFixer && position !== "bottom" && (
           <button
             onClick={() => window.scrollTo(0, window.scrollY + 50)}
