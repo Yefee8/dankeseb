@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 export default function Header() {
-  const [bg, setBg] = useState(true);
+  const [bg, setBg] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,10 +18,11 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <header
-      className={`fixed top-0 border-b-2 border-red-500/10 duration-150 left-0 w-full py-2 flex justify-center md:justify-between gap-4 flex-wrap items-center md:px-16 px-8 z-50 duration-250 
-    ${bg ? "bg-[#111021]/50" : "bg-transparent"}`}
+      className={`fixed top-0 border-b-2 duration-150 left-0 w-full py-2 flex justify-center md:justify-between gap-4 flex-wrap items-center md:px-16 px-8 z-50 duration-250 
+    ${bg ? "bg-[#111021]/50 border-red-500/10" : "bg-transparent border-transparent"}`}
     >
       <a href="/">
         <h1 className="text-2xl font-bold cursor-pointer">Danke Seb</h1>
